@@ -59,6 +59,7 @@ export default function PostPage({
 }
 
 export const getServerSideProps = async ({ params }) => {
+  console.log('meus params', params);
   const globalData = getGlobalData();
   const posts = await getPostBySlug(params.id);
  
